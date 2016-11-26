@@ -109,7 +109,7 @@ var punTimer;
 function startPunTimer(delay, callback) {
   //sendMessage(document.getElementById("input").value);
   if (punTimer) {
-    punTimer.clear();
+    window.clearInterval(punTimer);
   }
   punTimer = window.setInterval(function() {
     loadPun(callback);
